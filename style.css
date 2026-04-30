@@ -1,33 +1,22 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+}
+
 .header {
-    background-color: yellow;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    border: solid 1px #000;
-    padding: 10px;
-    font-size: 20px;
+    grid-column: 1 / -1;
+    background-color: rgb(188, 186, 186);
+    padding: 20px;
+   
 }
 
-.relativo {
-    position: relative;
-    height: 100px;
-    background-color: blue;
+.sidebar {
+    background-color: rgb(92, 91, 91);
+    padding: 20px;
 }
 
-.absoluto {
-    position: absolute;
-    height: 50px;
-    background-color: red;
-    bottom: 0;
-    right: 10px;
-    width: 20px;
-}
-
-.fixed {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
+.content {
+    background-color: #ffffff;
+    padding: 20px;
 }
